@@ -23,6 +23,7 @@ VERSION = 22
 
 DIRS = \
 ec/*.java \
+ec/app/orderProblem/*.java \
 ec/app/ant/*.java \
 ec/app/ant/func/*.java \
 ec/app/bbob/*.java \
