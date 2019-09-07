@@ -7,7 +7,7 @@ generations		= 100
 quit-on-run-complete	= true
 
 # Defino las variables generales al problema
-pop.subpop.0.size =                     50
+pop.subpop.0.size =                     100
 
 pop.subpop.0.species 		= ec.vector.IntegerVectorSpecies
 pop.subpop.0.species.fitness 	= ec.simple.SimpleFitness

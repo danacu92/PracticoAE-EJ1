@@ -484,22 +484,22 @@ public class IntegerVectorIndividual extends VectorIndividual
         }
 
          /********************************************METODOS CUSTOM**************************************** */
-   public void corregirMonto() 
-        {
-        int[] auxiliar= this.genome;
-        
-        while (15.05 < this.getMonto())
-        {        	
+   public void corregirMonto(){	   
+	    int[] auxiliar= this.genome;
+	    
+	    while (15.05 < this.getMonto()){
+	    	
 	        int celda = (int) Math.floor(Math.random()*auxiliar.length);
 	        if (auxiliar[celda]>0){
 	           auxiliar[celda]--;
 	            
 	        }        
-        }
-        this.genome=auxiliar;
-        }
+	    }
+	    
+	    this.genome=auxiliar;
+    }
     
-    public double getMonto(){
+    public double getMonto(){    	
     	//Devuelve el monto total de la orden
         IntegerVectorIndividual ind2 = (IntegerVectorIndividual) this;
         double[] precios = new double[]{2.15,2.75,3.35,3.55,4.20,5.80};
